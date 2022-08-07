@@ -1,0 +1,88 @@
+.cost-item-left {
+    display: grid;
+    grid-template-columns: 77px 1fr 1fr;
+    grid-gap: 8px;
+    align-items: center;
+}
+
+.btn-block__inner {
+    display: flex;
+}
+
+.btn-edit {
+    margin-right: 15px;
+}
+
+.cost-item__price-input {
+    margin-right: 15px;
+}
+
+.btn-save {
+    margin-right: 7px;
+}
+
+.btn-cancel {
+    margin-right: 15px;
+}
+
+.btn-save {
+    position: relative;
+    min-width: 103px;
+    min-height: 38px;
+}
+
+.btn-delete {
+    position: relative;
+    min-width: 40px;
+    min-height: 38px;
+}
+
+@media (max-width: 1200px) {
+    .cost-item__shop-input,
+    .cost-item__price-input {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .cost-item__date-input {
+        width: 100px !important;
+    }
+
+    .cost-item__shop-input {
+        width: 80px !important;
+    }
+
+    .cost-item__price-input {
+        width: 75px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .cost-item {
+        flex-direction: column;
+    }
+
+    .cost-item-left,
+    .cost-item-right,
+    .btn-block__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cost-item__price-input,
+    .cost-item__shop-input,
+    .cost-item__date-input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100% !important;
+    }
+
+    .btn-edit,
+    .btn-cancel,
+    .btn-save {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
